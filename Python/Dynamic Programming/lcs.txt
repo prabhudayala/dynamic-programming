@@ -1,0 +1,4 @@
+Based on the above discussion, here we get the possibilities as described below: 
+1) If X[ i] = = Y[ j] : 1 + LCS( i + 1, j + 1) 
+2) If X[ i] ? Y[ j]. LCS( i, j + 1) // skipping jth character of Y 
+3) If X[ i] ? Y[ j]. LCS( i + 1, j) // skipping ith character of X
