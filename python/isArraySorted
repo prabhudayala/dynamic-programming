@@ -1,0 +1,13 @@
+#recursive approach for checking whether a array is in sorted order or not
+def check(a):
+    if(len(a)==1):
+        return True
+    i=len(a)-1
+    print("value of i is ",i)
+    if(a[i]<a[i-1]):
+        return False
+    else:
+        return check(a[:-1])
+    return True
+X=[1,2,3,4]
+print(check(X))
